@@ -10,3 +10,4 @@
 #import <CoreData/CoreData.h>
 
 #import "NSManagedObject+Extensions.h"
+#import "NSManagedObjectContext+Extensions.h"
