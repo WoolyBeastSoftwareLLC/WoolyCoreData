@@ -18,4 +18,6 @@
 
 + (NSFetchRequest *)fetchRequestInManagedObjectContext:(NSManagedObjectContext *)context;
 + (NSManagedObject *)createInManagedObjectContext:(NSManagedObjectContext *)context;
+
+- (NSManagedObject *)managedObjectInManagedObjectContext:(NSManagedObjectContext *)context;
 @end

@@ -12,6 +12,10 @@
 @implementation NSManagedObject(WoolyBeast)
 
 //
+//	Method:
+//		
+//
+//	Synopsis:
 //
 //
 - (NSArray *)keys
@@ -20,6 +24,10 @@
 }
 
 //
+//	Method:
+//		
+//
+//	Synopsis:
 //
 //
 - (NSArray *)attributeKeys
@@ -28,6 +36,10 @@
 }
 
 //
+//	Method:
+//		
+//
+//	Synopsis:
 //
 //
 - (NSDictionary *)values
@@ -36,6 +48,13 @@
 	return values;
 }
 
+//
+//	Method:
+//		
+//
+//	Synopsis:
+//
+//
 - (void)setValues:(NSDictionary *)values
 {
 	for ( NSString *key in self.keys ) {
@@ -46,12 +65,26 @@
 	}
 }
 
+//
+//	Method:
+//		
+//
+//	Synopsis:
+//
+//
 - (BOOL)canEditValueForKey:(NSString *)key
 {
 	return [self.keys containsObject:key];
 }
 
 
+//
+//	Method:
+//		
+//
+//	Synopsis:
+//
+//
 + (NSFetchRequest *)fetchRequestInManagedObjectContext:(NSManagedObjectContext *)context
 {
 	NSFetchRequest *request = [NSFetchRequest new];
@@ -60,10 +93,36 @@
 	return [request autorelease];
 }
 
+//
+//	Method:
+//		
+//
+//	Synopsis:
+//
+//
 + (NSManagedObject *)createInManagedObjectContext:(NSManagedObjectContext *)context
 {
 	NSParameterAssert(context);
 	return [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([self class]) inManagedObjectContext:context];
+}
+
+//
+//	Method:
+//		
+//
+//	Synopsis:
+//
+//
+- (NSManagedObject *)managedObjectInManagedObjectContext:(NSManagedObjectContext *)context
+{
+	NSParameterAssert(context);
+	
+	NSManagedObject *object = self;
+	if ( self.managedObjectContext != context ) {
+		NSManagedObjectID *objectID = [self objectID];
+		object = [context objectWithID:objectID];
+	}
+	return object;
 }
 
 @end
