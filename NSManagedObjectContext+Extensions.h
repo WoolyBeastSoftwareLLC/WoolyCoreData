@@ -11,4 +11,7 @@
 @interface NSManagedObjectContext (Extensions)
 - (NSArray *)fetchObjectsForEntityName:(NSString *)name withPredicate:(NSPredicate *)predicate andSortDescriptors:(NSArray *)sortDescriptors;
 - (NSInteger)objectCountForEntityName:(NSString *)name withPredicate:(NSPredicate *)predicate;
+
+- (NSManagedObject *)objectWithURI:(NSURL *)uri;
+
 @end

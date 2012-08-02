@@ -55,4 +55,21 @@
 	return count;
 }
 
+
+- (NSManagedObject *)objectWithURI:(NSURL *)uri
+{
+    NSParameterAssert(uri);
+    
+    NSManagedObject *object = nil;
+    NSManagedObjectID *objectID = [[self persistentStoreCoordinator] managedObjectIDForURIRepresentation:uri];
+    if ( objectID ) {
+        NSError *error = nil;
+        object = [self existingObjectWithID:objectID error:&error];
+        if ( object == nil ) {
+            NSLog(@"Error fetching object from URI: %@",error);
+        }
+    }
+    return object;
+}
+
 @end
