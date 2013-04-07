@@ -1,14 +1,19 @@
 //
-//  NSManagedObjectContext+Extensions.m
+//  NSManagedObjectContext+WoolyCoreData.m
 //  WoolyCoreData
 //
 //  Created by Scott Chandler on 4/5/12.
 //  Copyright (c) 2012 Wooly Beast Software, LLC. All rights reserved.
 //
 
-#import "NSManagedObjectContext+Extensions.h"
+#import "NSManagedObjectContext+WoolyCoreData.h"
 
-@implementation NSManagedObjectContext (Extensions)
+@implementation NSManagedObjectContext (WoolyCoreData)
+/*
+ *
+ *
+ *
+ */
 - (NSArray *)fetchObjectsForEntityName:(NSString *)name withPredicate:(NSPredicate *)predicate andSortDescriptors:(NSArray *)sortDescriptors
 {
 	NSParameterAssert(name);
@@ -35,6 +40,11 @@
 	return entities;
 }
 
+/*
+ *
+ *
+ *
+ */
 - (NSInteger)objectCountForEntityName:(NSString *)name withPredicate:(NSPredicate *)predicate
 {
 	NSParameterAssert(name);
@@ -55,7 +65,11 @@
 	return count;
 }
 
-
+/*
+ *
+ *
+ *
+ */
 - (NSManagedObject *)objectWithURI:(NSURL *)uri
 {
     NSParameterAssert(uri);
@@ -70,6 +84,21 @@
         }
     }
     return object;
+}
+
+/*
+ *
+ *
+ *
+ */
+- (NSManagedObject *)objectWithinManagedObjectContextForObject:(NSManagedObject *)object
+{
+	NSManagedObject *newObject = object;
+	if ( self != object.managedObjectContext ) {
+		NSManagedObjectID *objectID = [object objectID];
+		newObject = [self objectWithID:objectID];
+	}
+	return newObject;
 }
 
 @end

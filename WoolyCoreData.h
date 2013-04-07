@@ -7,6 +7,5 @@
  *
  */
 
-#import "WoolyToolkit.h"
-
-#import "CoreData+Extensions.h"
+#import "NSManagedObject+WoolyCoreData.h"
+#import "NSManagedObjectContext+WoolyCoreData.h"

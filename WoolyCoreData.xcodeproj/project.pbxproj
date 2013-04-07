@@ -8,24 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		4CBA6DE7132409B80052CED7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBA6DE6132409B80052CED7 /* CoreData.framework */; };
-		4CBA6DEF132409CA0052CED7 /* CoreData+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CBA6DEC132409CA0052CED7 /* CoreData+Extensions.h */; };
-		4CBA6DF0132409CA0052CED7 /* NSManagedObject+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CBA6DED132409CA0052CED7 /* NSManagedObject+Extensions.h */; };
-		4CBA6DF1132409CA0052CED7 /* NSManagedObject+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA6DEE132409CA0052CED7 /* NSManagedObject+Extensions.m */; };
+		4CBA6DF0132409CA0052CED7 /* NSManagedObject+WoolyCoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CBA6DED132409CA0052CED7 /* NSManagedObject+WoolyCoreData.h */; };
+		4CBA6DF1132409CA0052CED7 /* NSManagedObject+WoolyCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA6DEE132409CA0052CED7 /* NSManagedObject+WoolyCoreData.m */; };
 		4CBA6DF3132409E50052CED7 /* WoolyCoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CBA6DF2132409E50052CED7 /* WoolyCoreData.h */; };
-		4CFB7CE6152E2785000573C6 /* NSManagedObjectContext+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CFB7CE4152E2785000573C6 /* NSManagedObjectContext+Extensions.h */; };
-		4CFB7CE7152E2785000573C6 /* NSManagedObjectContext+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB7CE5152E2785000573C6 /* NSManagedObjectContext+Extensions.m */; };
+		4CFB7CE6152E2785000573C6 /* NSManagedObjectContext+WoolyCoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CFB7CE4152E2785000573C6 /* NSManagedObjectContext+WoolyCoreData.h */; };
+		4CFB7CE7152E2785000573C6 /* NSManagedObjectContext+WoolyCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB7CE5152E2785000573C6 /* NSManagedObjectContext+WoolyCoreData.m */; };
 		AA747D9F0F9514B9006C5449 /* WoolyCoreData_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* WoolyCoreData_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4CBA6DE6132409B80052CED7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		4CBA6DEC132409CA0052CED7 /* CoreData+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreData+Extensions.h"; sourceTree = "<group>"; };
-		4CBA6DED132409CA0052CED7 /* NSManagedObject+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+Extensions.h"; sourceTree = "<group>"; };
-		4CBA6DEE132409CA0052CED7 /* NSManagedObject+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+Extensions.m"; sourceTree = "<group>"; };
+		4CBA6DED132409CA0052CED7 /* NSManagedObject+WoolyCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+WoolyCoreData.h"; sourceTree = "<group>"; };
+		4CBA6DEE132409CA0052CED7 /* NSManagedObject+WoolyCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+WoolyCoreData.m"; sourceTree = "<group>"; };
 		4CBA6DF2132409E50052CED7 /* WoolyCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WoolyCoreData.h; sourceTree = "<group>"; };
-		4CFB7CE4152E2785000573C6 /* NSManagedObjectContext+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+Extensions.h"; sourceTree = "<group>"; };
-		4CFB7CE5152E2785000573C6 /* NSManagedObjectContext+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+Extensions.m"; sourceTree = "<group>"; };
+		4CFB7CE4152E2785000573C6 /* NSManagedObjectContext+WoolyCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+WoolyCoreData.h"; sourceTree = "<group>"; };
+		4CFB7CE5152E2785000573C6 /* NSManagedObjectContext+WoolyCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+WoolyCoreData.m"; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* WoolyCoreData_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WoolyCoreData_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libWoolyCoreData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWoolyCoreData.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,11 +73,10 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				4CBA6DEC132409CA0052CED7 /* CoreData+Extensions.h */,
-				4CBA6DED132409CA0052CED7 /* NSManagedObject+Extensions.h */,
-				4CBA6DEE132409CA0052CED7 /* NSManagedObject+Extensions.m */,
-				4CFB7CE4152E2785000573C6 /* NSManagedObjectContext+Extensions.h */,
-				4CFB7CE5152E2785000573C6 /* NSManagedObjectContext+Extensions.m */,
+				4CBA6DED132409CA0052CED7 /* NSManagedObject+WoolyCoreData.h */,
+				4CBA6DEE132409CA0052CED7 /* NSManagedObject+WoolyCoreData.m */,
+				4CFB7CE4152E2785000573C6 /* NSManagedObjectContext+WoolyCoreData.h */,
+				4CFB7CE5152E2785000573C6 /* NSManagedObjectContext+WoolyCoreData.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -101,10 +98,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA747D9F0F9514B9006C5449 /* WoolyCoreData_Prefix.pch in Headers */,
-				4CBA6DEF132409CA0052CED7 /* CoreData+Extensions.h in Headers */,
-				4CBA6DF0132409CA0052CED7 /* NSManagedObject+Extensions.h in Headers */,
+				4CBA6DF0132409CA0052CED7 /* NSManagedObject+WoolyCoreData.h in Headers */,
 				4CBA6DF3132409E50052CED7 /* WoolyCoreData.h in Headers */,
-				4CFB7CE6152E2785000573C6 /* NSManagedObjectContext+Extensions.h in Headers */,
+				4CFB7CE6152E2785000573C6 /* NSManagedObjectContext+WoolyCoreData.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,8 +157,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CBA6DF1132409CA0052CED7 /* NSManagedObject+Extensions.m in Sources */,
-				4CFB7CE7152E2785000573C6 /* NSManagedObjectContext+Extensions.m in Sources */,
+				4CBA6DF1132409CA0052CED7 /* NSManagedObject+WoolyCoreData.m in Sources */,
+				4CFB7CE7152E2785000573C6 /* NSManagedObjectContext+WoolyCoreData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
