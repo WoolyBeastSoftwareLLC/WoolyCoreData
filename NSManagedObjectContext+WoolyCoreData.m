@@ -94,7 +94,7 @@
 - (NSManagedObject *)objectWithinManagedObjectContextForObject:(NSManagedObject *)object
 {
 	NSManagedObject *newObject = object;
-	if ( self != object.managedObjectContext ) {
+	if ( object && self != object.managedObjectContext ) {
 		NSManagedObjectID *objectID = [object objectID];
 		newObject = [self objectWithID:objectID];
 	}
