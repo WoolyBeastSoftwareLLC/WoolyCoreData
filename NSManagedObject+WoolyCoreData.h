@@ -12,4 +12,6 @@
 @interface NSManagedObject(WoolyCoreData)
 + (NSFetchRequest *)fetchRequestInManagedObjectContext:(NSManagedObjectContext *)context;
 + (NSManagedObject *)createInManagedObjectContext:(NSManagedObjectContext *)context;
+
+- (BOOL)isEqualToManagedObject:(NSManagedObject *)other;
 @end

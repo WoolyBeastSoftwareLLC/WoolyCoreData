@@ -40,4 +40,18 @@
 	return [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([self class]) inManagedObjectContext:context];
 }
 
+//
+//	Method:
+//
+//
+//	Synopsis:
+//
+//
+- (BOOL)isEqualToManagedObject:(NSManagedObject *)other
+{
+	NSManagedObjectID *obj1ID = [self objectID];
+	NSManagedObjectID *obj2ID = [other objectID];
+	return [obj1ID isEqual:obj2ID];
+}
+
 @end
