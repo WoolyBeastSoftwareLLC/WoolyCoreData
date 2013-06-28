@@ -19,12 +19,12 @@
 
 /* Begin PBXFileReference section */
 		4CBA6DE6132409B80052CED7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		4CBA6DED132409CA0052CED7 /* NSManagedObject+WoolyCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+WoolyCoreData.h"; sourceTree = "<group>"; };
-		4CBA6DEE132409CA0052CED7 /* NSManagedObject+WoolyCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+WoolyCoreData.m"; sourceTree = "<group>"; };
-		4CBA6DF2132409E50052CED7 /* WoolyCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WoolyCoreData.h; sourceTree = "<group>"; };
-		4CFB7CE4152E2785000573C6 /* NSManagedObjectContext+WoolyCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+WoolyCoreData.h"; sourceTree = "<group>"; };
-		4CFB7CE5152E2785000573C6 /* NSManagedObjectContext+WoolyCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+WoolyCoreData.m"; sourceTree = "<group>"; };
-		AA747D9E0F9514B9006C5449 /* WoolyCoreData_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WoolyCoreData_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		4CBA6DED132409CA0052CED7 /* NSManagedObject+WoolyCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+WoolyCoreData.h"; path = "WoolyCoreData/NSManagedObject+WoolyCoreData.h"; sourceTree = "<group>"; };
+		4CBA6DEE132409CA0052CED7 /* NSManagedObject+WoolyCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+WoolyCoreData.m"; path = "WoolyCoreData/NSManagedObject+WoolyCoreData.m"; sourceTree = "<group>"; };
+		4CBA6DF2132409E50052CED7 /* WoolyCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WoolyCoreData.h; path = WoolyCoreData/WoolyCoreData.h; sourceTree = "<group>"; };
+		4CFB7CE4152E2785000573C6 /* NSManagedObjectContext+WoolyCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSManagedObjectContext+WoolyCoreData.h"; path = "WoolyCoreData/NSManagedObjectContext+WoolyCoreData.h"; sourceTree = "<group>"; };
+		4CFB7CE5152E2785000573C6 /* NSManagedObjectContext+WoolyCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObjectContext+WoolyCoreData.m"; path = "WoolyCoreData/NSManagedObjectContext+WoolyCoreData.m"; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* WoolyCoreData_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WoolyCoreData_Prefix.pch; path = WoolyCoreData/WoolyCoreData_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libWoolyCoreData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWoolyCoreData.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -130,7 +130,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0500;
 			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "WoolyCoreData" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -169,14 +169,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/WoolyCoreData.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = WoolyCoreData_Prefix.pch;
+				GCC_PREFIX_HEADER = WoolyCoreData/WoolyCoreData_Prefix.pch;
 				HEADER_SEARCH_PATHS = "";
 				INSTALL_PATH = /usr/local/lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
@@ -190,11 +189,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/WoolyCoreData.dst;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = WoolyCoreData_Prefix.pch;
+				GCC_PREFIX_HEADER = WoolyCoreData/WoolyCoreData_Prefix.pch;
 				HEADER_SEARCH_PATHS = "";
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = WoolyCoreData;
@@ -206,12 +204,12 @@
 		1DEB922308733DC00010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -219,7 +217,6 @@
 		1DEB922408733DC00010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
